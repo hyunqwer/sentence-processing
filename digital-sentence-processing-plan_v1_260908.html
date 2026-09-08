@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>디지털 구문독해 코스 기획안 | Sentence Processing</title>
+<style>
+:root{--ink:#182c38;--muted:#5b6b75;--line:#dce4e9;--blue:#164b70;--teal:#087c7c;--pale:#eef5f8;--paper:#fff;--amber:#8c5b0e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#edf1f4;color:var(--ink);font:15px/1.8 "Malgun Gothic","Apple SD Gothic Neo",sans-serif}a{color:var(--blue)}.wrap{max-width:1180px;margin:auto;background:var(--paper)}header{padding:64px 64px 44px;background:#163749;color:white}.eyebrow{font-size:12px;letter-spacing:2px;font-weight:700;color:#9fdddd}h1{font-size:38px;line-height:1.35;margin:16px 0}header p{max-width:850px;color:#d9e5ec}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}.meta span{padding:4px 12px;border:1px solid #537080;border-radius:5px;font-size:12px}nav{padding:18px 64px;border-bottom:1px solid var(--line);display:flex;gap:10px 23px;flex-wrap:wrap;background:#f8fafb}nav a{text-decoration:none;font-size:13px;font-weight:700}main{padding:12px 64px 64px}section{padding-top:40px;margin-top:10px}h2{font-size:25px;line-height:1.4;margin:0 0 20px;border-bottom:2px solid var(--ink);padding-bottom:13px}h2 .num{color:var(--teal);margin-right:12px;font-size:15px}h3{font-size:18px;margin:28px 0 12px}h4{font-size:15px;margin:20px 0 8px}p{margin:10px 0}.lead{font-size:18px;font-weight:700}.muted,small{color:var(--muted)}.callout{padding:18px 22px;background:var(--pale);border-left:4px solid var(--teal);margin:20px 0}.note{padding:13px 18px;background:#fff8e9;border-left:3px solid #d3a03f;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{border:1px solid var(--line);padding:20px;border-radius:8px}.card h3{margin-top:0}.tag{font-size:11px;font-weight:700;padding:3px 8px;border-radius:4px;background:#e7f4f1;color:#08675e;display:inline-block}.tag.proposal{background:#fff0ce;color:var(--amber)}.table-scroll{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:13px;margin:14px 0 20px}th,td{padding:12px 13px;border:1px solid var(--line);vertical-align:top;text-align:left}th{background:#edf3f6;color:#173e55;font-weight:700}td:first-child{font-weight:700}ul,ol{padding-left:23px;margin:9px 0}li{margin:5px 0}.flow{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.flow span{flex:1;min-width:130px;background:#edf5f7;border-top:3px solid var(--teal);padding:12px;font-size:13px}.flow b{display:block}.sample{border:1px solid #cddde4;border-radius:10px;padding:26px;margin:24px 0}.sample h3{margin-top:0}.sentence{font-family:Georgia,"Times New Roman",serif;font-size:21px;line-height:1.7;background:#f4f7f9;padding:20px;margin:15px 0;color:#173a50}.chunk{font-family:Georgia,"Times New Roman",serif;font-size:17px;line-height:1.9}.structure{font:14px/1.9 Consolas,"Malgun Gothic",monospace;white-space:pre-wrap;overflow-wrap:anywhere;background:#f5f7f8;padding:18px;border-radius:5px}.step{display:grid;grid-template-columns:140px 1fr;gap:18px;border-top:1px solid var(--line);padding:17px 0}.step-title{font-weight:700;color:var(--teal)}.step p:first-child{margin-top:0}.summary{margin-top:12px;font-size:13px}footer{padding:28px 64px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}.tools{position:fixed;right:20px;bottom:20px;display:flex;gap:8px}.tools button{background:#163749;color:white;border:0;border-radius:7px;padding:12px 16px;cursor:pointer;font:inherit;font-size:13px;box-shadow:0 3px 14px #0002}button:focus-visible,a:focus-visible{outline:3px solid #e6a936;outline-offset:3px}@media(max-width:760px){header{padding:35px 24px}h1{font-size:28px}nav{padding:16px 24px}main{padding:5px 24px 45px}.grid{grid-template-columns:1fr}.sample{padding:18px}.step{grid-template-columns:1fr;gap:5px}.sentence{font-size:19px}footer{padding:25px}.tools{position:static;padding:15px;justify-content:center}th,td{min-width:110px}}@media print{@page{size:A4;margin:16mm}body,.wrap{background:white;font-size:10pt;max-width:none}header{padding:22px;background:white;color:var(--ink);border-bottom:3px solid var(--ink)}header p,.eyebrow{color:var(--muted)}h1{font-size:26pt}nav,.tools{display:none}main{padding:0}section{padding-top:22px}h2{font-size:18pt}h3{font-size:13pt}table{font-size:9pt}th,td{padding:7px}thead{display:table-header-group}tr,.step,.card,.sentence{break-inside:avoid}h2,h3,h4{break-after:avoid}.sample{padding:15px}.sentence{font-size:13pt}.chunk{font-size:11pt}.structure{font-size:9pt}.table-scroll{overflow:visible}footer{padding:15px 0}.meta span{border-color:#aaa}a{text-decoration:none;color:inherit}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+<div class="eyebrow">DIGITAL COURSE DESIGN · PLANNING DOCUMENT</div>
+<h1>디지털 구문독해 코스 기획안</h1>
+<p class="lead">의미 덩어리의 발견에서, 시간 내 수능 지문 처리까지</p>
+<p>문장이 확장되고 연결되는 원리를 동일한 프레임워크로 익히고, 학습자의 실제 처리 행동을 바탕으로 피드백과 반복을 제공하는 4개 Band의 디지털 코스북.</p>
+<div class="meta"><span>대상: 예비중 ~ 수능</span><span>버전: 기획 초안 v1.0</span><span>작성: 2026.09.08</span><span>최종 교재: 수능 실전편</span></div>
+</header>
+<nav aria-label="문서 목차"><a href="#purpose">01 목적·구조</a><a href="#framework">02 Framework</a><a href="#scope">03 Scope &amp; Sequence</a><a href="#difficulty">04 난이도</a><a href="#activities">05 활동 흐름</a><a href="#samples">06 Band별 샘플</a><a href="#assessment">07 평가·개인화</a><a href="#production">08 제작·검증</a></nav>
+<main>
+<section id="purpose">
+<h2><span class="num">01</span>코스 목적과 전체 구조</h2>
+<p class="lead">최종 목표는 수능 영어 지문을 제한 시간 안에 정확하게 읽고, 근거에 따라 문제를 해결하는 능력이다.</p>
+<p>구문독해는 이를 가능하게 하는 기초 처리 능력이다. 단어 뜻을 아는 상태에서 출발해 핵심과 수식의 관계를 유지하며 영어 어순대로 의미를 누적하고, 표시와 도움 없이 새로운 문장·지문을 처리하도록 훈련한다.</p>
+<div class="callout"><b>기획 중심축</b><br>문장구조 기반 + 의미단위 처리 기반 + 내부 문법 태그 기반.<br>학생에게는 “무엇을 어떻게 읽는가”를, 교사에게는 “어디서 처리가 막히는가”를, 시스템에는 “다음에 어떤 문장을 배정할 것인가”를 제공한다.</div>
+<div class="grid">
+<div class="card"><span class="tag">대화에서 합의</span><h3>유지할 설계 원칙</h3><ul><li>공통 Scope &amp; Sequence를 Band별로 반복·심화한다.</li><li>학생이 먼저 끊고, 피드백 후 다시 처리한다.</li><li>영어 어순에 따른 의미 누적을 완역보다 먼저 경험한다.</li><li>새 문장과 지문으로 전이하고 마지막에는 표시를 제거한다.</li><li>최종 교재는 시간 제한 수행을 포함하는 수능 실전편이다.</li></ul></div>
+<div class="card"><span class="tag proposal">이번 문서의 구체화 제안</span><h3>제작·검증 과정에서 확정</h3><ul><li>Band별 세부 단원 배치, 분량 및 권 구성.</li><li>난이도 수치 범위와 콘텐츠 태깅 기준.</li><li>숙달 판정, 복습 배정 및 시간 목표.</li><li>AI 피드백의 진단 규칙과 교사 검수 절차.</li><li>Band A~C 신규 샘플 및 모든 유사문장.</li></ul></div>
+</div>
+<h3>학습 단위의 확장</h3>
+<div class="flow"><span><b>1. Sentence</b>뼈대·의미 단위 처리</span><span><b>2. Paragraph</b>문장 간 관계 파악</span><span><b>3. Passage</b>글의 논리·정보 통합</span><span><b>4. Task</b>근거 탐색·선택지 판단</span><span><b>5. CSAT Performance</b>제한 시간 내 수행</span></div>
+<div class="table-scroll"><table><thead><tr><th>Band / 교재 가칭</th><th>대상·성장 목표</th><th>주요 학습 단위</th><th>도착점</th></tr></thead><tbody>
+<tr><td>A · 문장 읽기 입문</td><td>예비중~중1 · 발견</td><td>짧은 문장 → 2~3문장 맥락</td><td>핵심과 설명 덩어리를 구별해 읽는다.</td></tr>
+<tr><td>B · 문장 확장과 연결</td><td>중2~중3 · 독립 적용</td><td>복합 문장 → 짧은 문단</td><td>주절·수식절과 의미 관계를 스스로 처리한다.</td></tr>
+<tr><td>C · 고등 복합구문과 지문</td><td>고등 · 통합·자동화</td><td>중첩 문장 → 완결 지문</td><td>긴 구조를 처리하면서 주장·근거·대조 관계를 유지한다.</td></tr>
+<tr><td>D · 수능 실전편</td><td>수능 · 정확도와 시간의 통합</td><td>지문 → 유형별 문제 → 실전 세트</td><td>표시 없이 읽고, 근거를 찾아 제한 시간 내 판단한다.</td></tr>
+</tbody></table></div>
+<p class="muted">학년은 권장 진입 구간이다. 실제 배치는 사전 진단과 영역별 숙달도에 따른다. Band C는 복합구문과 지문 이해의 안정화, Band D는 시험 과제와 시간 배분을 포함한 실전 수행에 초점을 둔다.</p>
+</section>
+<section id="framework">
+<h2><span class="num">02</span>Sentence Processing Framework</h2>
+<p>공통 처리 지도는 문장·텍스트·시험의 3개 층으로 구성한다. 아래 지도는 교육과정의 축이며, 매 문장을 학습하는 6단계 활동 흐름과 구분한다.</p>
+<div class="table-scroll"><table><thead><tr><th>층위</th><th>처리 기능</th><th>학습자 행동</th><th>관찰 증거</th></tr></thead><tbody>
+<tr><td rowspan="6">Layer 1<br>Sentence</td><td><b>CORE</b> · 중심 찾기</td><td>누가/무엇이, 무엇을 하는지와 필요한 목적어·보어를 찾는다.</td><td>핵심절과 동사 선택</td></tr>
+<tr><td><b>CHUNK</b> · 의미 단위 묶기</td><td>단어를 구·절 단위로 묶어 읽는다.</td><td>경계 선택과 수정 기록</td></tr>
+<tr><td><b>EXPAND</b> · 확장 연결하기</td><td>명사 뒤 설명을 연결하고 동사 뒤 필수 정보를 완성한다.</td><td>수식 대상·동사 보충 정보 연결</td></tr>
+<tr><td><b>CONNECT</b> · 생각 연결하기</td><td>절의 역할, 원인·대조·조건·비교 관계를 파악한다.</td><td>절 범위와 의미 관계 판별</td></tr>
+<tr><td><b>COMPRESS</b> · 압축 풀기</td><td>분사·생략·동격·병렬의 관계를 문맥 안에서 복원한다.</td><td>행위 주체·병렬 범위 설명</td></tr>
+<tr><td><b>INTEGRATE</b> · 통합하기</td><td>긴 수식과 절 내부 정보를 유지하며 전체 의미를 구성한다.</td><td>핵심 명제 및 세부 관계 이해</td></tr>
+<tr><td>Layer 2<br>Text</td><td><b>COHERE → ORGANIZE → INFER</b></td><td>지시어·연결어를 추적하고, 주장·근거·예시를 조직하며, 문맥 근거로 추론한다.</td><td>지시 대상, 문장 기능, 요지와 추론 근거</td></tr>
+<tr><td>Layer 3<br>Test</td><td><b>LOCATE → JUDGE → PERFORM</b></td><td>필요한 근거를 찾고 선택지를 판단하며 시간 안에 세트를 완수한다.</td><td>정확도, 근거 타당성, 시간·미완료 항목</td></tr>
+</tbody></table></div>
+<h3>학생·교사·시스템의 3개 관점</h3>
+<div class="grid"><div class="card"><b>학생에게 보여주는 언어</b><p>“명사 뒤 설명을 붙여 읽기”, “동사 뒤 의미 완성하기”, “긴 설명 뒤 중심으로 돌아오기”. 문법 용어는 필요할 때 ‘문법 더보기’로 제공한다.</p></div><div class="card"><b>교사와 시스템이 관리하는 정보</b><p>처리 기능, 문법·구문 태그, 중첩 및 의존 거리, 어휘 부담, 지문 기능, 도움 사용 이력. 동일 문법도 다른 처리 난도로 관리한다.</p></div></div>
+<p class="note">구조를 잠시 접어 보여줄 때는 핵심을 찾기 위한 임시 표시임을 분명히 한다. 예: “He believed something.”은 뼈대 안내이며, 실제 문장 이해에는 that절 내용과 because절 관계를 다시 통합해야 한다.</p>
+</section>
+<section id="scope">
+<h2><span class="num">03</span>Scope &amp; Sequence · 공통 지도 × 4개 Band</h2>
+<p>기본 순서는 <b>Core → Chunk → Expand → Connect → Compress → Integrate → Text</b>이다. 기존 9개 Stage를 이 지도에 대응시키고, 마지막에 시험 수행 층을 확장한다. 각 Band에서 전체 지도를 다시 만나되, 초급에서는 압축·중첩 구조를 짧게 경험하고 상위 Band에서 본격적으로 다룬다.</p>
+<div class="table-scroll"><table><thead><tr><th>Stage / 처리축</th><th>A · 예비중~중1</th><th>B · 중2~중3</th><th>C · 고등</th><th>D · 수능</th></tr></thead><tbody>
+<tr><td>1. 중심 찾기<br>CORE</td><td>짧은 주어·동사, 목적어·보어</td><td>수식이 낀 주어와 주절 동사</td><td>절·동명사 주어, 긴 목적어</td><td>실전 문장의 핵심 명제 신속 파악</td></tr>
+<tr><td>2. 의미 덩어리<br>CHUNK</td><td>시간·장소 전치사구, 기본 명사구</td><td>길어진 구·절의 경계</td><td>추상 명사구, 복합 전치사구</td><td>표시 없이 의미 단위를 유지</td></tr>
+<tr><td>3. 명사 확장<br>EXPAND</td><td>전치사구 후치수식, 짧은 관계절 맛보기</td><td>관계절·분사·to부정사 후치수식</td><td>다중 수식, 관계절 안의 수식</td><td>수식 대상 추적, 핵심 복귀</td></tr>
+<tr><td>4. 동사 확장<br>EXPAND</td><td>want to, ask someone to 등 친숙한 패턴</td><td>동명사·to부정사, 목적격 보어, 지각·사역</td><td>가목적어, 긴 보충어, 복합 보어</td><td>추상 동사와 긴 목적어·보어 통합</td></tr>
+<tr><td>5. 생각 연결<br>CONNECT</td><td>and, but, because, when, if</td><td>명사절·부사절, 양보·조건·대조</td><td>복합절, 접속 표현의 범위</td><td>주장과 이유·양보 관계 신속 판단</td></tr>
+<tr><td>6. 비교·관계<br>CONNECT</td><td>기본 비교급, 간단한 정도 표현</td><td>as~as, more~than, so~that, too~to</td><td>비교절 생략, 복합 비교·결과</td><td>비교 기준과 논리 방향 유지</td></tr>
+<tr><td>7. 압축 풀기<br>COMPRESS</td><td>기본 병렬과 반복 정보 생략 경험</td><td>분사 수식 재방문, 짧은 동격·병렬</td><td>분사구문·축약·삽입·생략·명사화</td><td>압축 정보 복원, 병렬 범위 판단</td></tr>
+<tr><td>8. 긴 문장 통합<br>INTEGRATE</td><td>핵심 + 설명 한 덩어리</td><td>두 구조의 결합</td><td>다중 중첩, 장거리 연결, 도치·강조·가정</td><td>여러 구조의 동시 처리와 의미 유지</td></tr>
+<tr><td>9. 지문 활용<br>TEXT</td><td>2~3문장, 대명사 지시와 내용 연결</td><td>짧은 문단의 원인·대조·예시</td><td>완결 지문의 논리·요지·추론</td><td>문장 기능·지시·논리를 문제 근거로 활용</td></tr>
+<tr><td>10. 시험 수행<br>TEST · 확장층</td><td>문장 의미 확인</td><td>짧은 문단 이해 과제</td><td>시간을 기록하는 지문·문제 적용</td><td>유형별 적용 → 혼합 세트 → 시간 제한 실전</td></tr>
+</tbody></table></div>
+<h3>수능 실전편의 내부 순서</h3>
+<ol><li><b>실전 진단:</b>표시 없는 지문과 문제로 구조·어휘·논리·시간 병목을 구분한다.</li><li><b>문장 병목 보완:</b>취약한 처리 기능에 한해 6단계 문장 훈련을 배정한다.</li><li><b>지문·유형 적용:</b>요지·주장, 빈칸, 순서·삽입 등 과제별로 근거 탐색과 판단을 훈련한다.</li><li><b>혼합 세트:</b>지문 간 시간 배분, 미해결 문항 재접근을 연습한다.</li><li><b>시간 제한 실전:</b>학습 중 도움 없이 수행하고, 종료 후 오독 구간과 판단 근거를 복기한다.</li></ol>
+<p class="muted">실전에서는 매 문장마다 끊기 활동을 요구하지 않는다. 문장 훈련은 실전 수행 중 드러난 병목을 보완하는 경로로 사용한다. 시험 형식·문항 수·시간은 출시 시점의 공식 기준을 확인해 확정한다.</p>
+</section>
+<section id="difficulty">
+<h2><span class="num">04</span>난이도 체계</h2>
+<p><b>문법 항목이나 단어 수 하나로 레벨을 결정하지 않는다.</b> 구조 종류·조합과 중첩을 먼저 보고, 연결 거리·어휘·의미·맥락 부담을 함께 검토한다. 문장 자체의 복잡도와 도움·시간 같은 과제 조건은 별도로 기록한다.</p>
+<div class="table-scroll"><table><thead><tr><th>설계 축</th><th>A</th><th>B</th><th>C</th><th>D</th></tr></thead><tbody>
+<tr><td>문장 길이*</td><td>7~12단어 중심</td><td>12~20단어 중심</td><td>18~35단어 중심</td><td>25~45+단어 포함, 짧은 고밀도 문장도 혼합</td></tr>
+<tr><td>의미 단위 수*</td><td>2~4개</td><td>3~6개</td><td>5~9개</td><td>6~12개 및 내부적으로 처리</td></tr>
+<tr><td>구조 종류·조합</td><td>기본 구·절, 목표 구조 1개</td><td>주요 구문, 2개 조합 중심</td><td>축약·삽입·생략, 3개 이상 결합</td><td>실전 구조 혼합, 논리·추상 의미와 결합</td></tr>
+<tr><td>중첩 깊이*</td><td>0~1단계</td><td>1~2단계</td><td>2~3단계 중심</td><td>2~3단계 이상도 포함</td></tr>
+<tr><td>의존 거리</td><td>핵심 요소 사이 삽입 적음</td><td>한 덩어리 건너 연결</td><td>여러 수식 사이 핵심 연결 유지</td><td>장거리 연결을 지문 논리와 함께 유지</td></tr>
+<tr><td>어휘·의미 부담</td><td>친숙·구체적 상황</td><td>교과·일반 주제</td><td>추상·학술 어휘와 명사화</td><td>추상 논증과 문맥 의미 판단</td></tr>
+<tr><td>담화 부담</td><td>문장 이해·간단한 지시</td><td>문단 안의 관계</td><td>지문 구성·추론</td><td>논리·문제 근거·선택지 비교</td></tr>
+<tr><td>도움 제공</td><td>첫 시도 후 단계적 힌트 충분히</td><td>요청 시 부분 힌트</td><td>최소 도움, 오독 구간 중심</td><td>훈련에서만 선택 제공, 실전 중 제거</td></tr>
+<tr><td>시간 조건</td><td>정확한 이해 우선</td><td>정확도 안정 후 시간 관찰</td><td>지문 단위 효율 향상</td><td>정확도를 유지하며 세트 시간 관리</td></tr>
+</tbody></table></div>
+<p class="note">* 수치는 제작 가이드 초안이며 학년 규준이나 검증된 진급 기준이 아니다. 범위는 의도적으로 겹친다. 끊기 방식에 따라 의미 단위 수가 달라질 수 있으므로 대표 분절안 기준으로 기록한다.</p>
+<h3>콘텐츠 태깅의 운영 정의</h3>
+<ul><li><b>Structure Count:</b>한 문장에 나타난 목표 구조의 발생 수. 구조의 종류 수와 따로 기록한다.</li><li><b>Embedding Depth:</b>주절을 0으로 두고 그 안에 포함된 절·비정형절을 내려갈 때 1씩 가산한다. 병렬 항목은 깊이를 늘리지 않는다. 전치사구 내부 확장은 별도 태그로 관리한다.</li><li><b>Dependency Distance:</b>주어 핵심어–정형동사, 피수식어–수식부 시작점 등 연결 쌍을 지정하고 사이의 단어 수를 기록한다. 어떤 연결을 측정했는지 함께 보존한다.</li><li><b>Vocabulary:</b>선정 어휘 목록의 수준과 실제 학습자의 미지어 비율을 함께 본다. 구조 진단용 문장에는 어려운 핵심 단어의 뜻을 선택 제공한다.</li><li><b>Task Conditions:</b>힌트·번역·음성 노출, 시간 제한 유무를 문장 난도와 분리한다. 도움을 받은 성공과 독립 성공을 구별한다.</li></ul>
+<p>초기에는 각 축의 프로필로 난도를 관리한다. 단일 Sentence Complexity Score는 학습자 데이터와 전문가 평정을 확보한 후 가중치를 검증해 도입한다.</p>
+</section>
+<section id="activities">
+<h2><span class="num">05</span>공통 활동 흐름과 학습 UX</h2>
+<div class="flow"><span><b>① 직접 끊기</b>내 처리 방식 드러내기</span><span><b>② AI 피드백</b>관계 확인·재시도</span><span><b>③ 구조 시각화</b>뼈대와 확장 연결</span><span><b>④ 직독직해</b>어순대로 의미 누적</span><span><b>⑤ 유사문장 적용</b>새 문장에 전이</span><span><b>⑥ 표시 제거 후 재독</b>독립 읽기 확인</span></div>
+<div class="table-scroll"><table><thead><tr><th>단계</th><th>화면·학습자 행동</th><th>피드백·기록</th></tr></thead><tbody>
+<tr><td>1. 직접 끊기</td><td>표시 없는 원문을 읽고 단어 사이를 눌러 /를 넣거나 제거한다. 키보드로도 선택·해제한다.</td><td>최초 분절, 수정, 제출까지의 활성 시간. 첫 화면에서 정답 경계를 노출하지 않는다.</td></tr>
+<tr><td>2. AI 피드백</td><td>문제가 의심되는 연결 한 곳을 확인하고 재시도한다.</td><td>“왜 이 덩어리가 붙는가”를 설명한다. 경계 불일치만으로 오답 판정하지 않는다.</td></tr>
+<tr><td>3. 구조 시각화</td><td>주절 → 수식 → 절·병렬 관계를 단계적으로 펼친다.</td><td>색뿐 아니라 괄호·연결선·텍스트 라벨을 함께 쓴다.</td></tr>
+<tr><td>4. 직독직해</td><td>영어 덩어리마다 의미를 예상하고 공개한다. 마지막에 전체 의미를 확인한다.</td><td>앞의 의미를 유지하며 새 정보를 붙인다. 처음부터 자연스러운 완역을 제시하지 않는다.</td></tr>
+<tr><td>5. 유사문장 적용</td><td>어휘를 바꾼 문장 → 구조 위치를 바꾼 문장 → 짧은 맥락에 적용한다.</td><td>힌트 없는 첫 시도의 관계 이해를 우선 측정한다.</td></tr>
+<tr><td>6. 표시 제거 후 재독</td><td>슬래시·색·괄호·번역을 제거하고 원문을 읽어 의미 질문에 답한다.</td><td>의미 정확도와 활성 시간을 함께 기록한다. 후속 새 문장 및 지연 점검으로 숙달을 확인한다.</td></tr>
+</tbody></table></div>
+<div class="callout"><b>지문에서 다시 발견하는 활동의 위치</b><br>6단계 흐름을 유지하면서 ⑤의 확장 과제 또는 Unit 마무리에 배치한다. Band A는 짧은 맥락, B는 문단, C·D는 완결 지문으로 확장한다. ⑥은 원문 재독으로 마치고, 지문 활동을 한 경우 표시 없는 지문도 다시 읽는다.</div>
+<h3>한 Lesson의 구성 예시 <span class="tag proposal">분량 제안</span></h3>
+<p>대표 문장 1개를 6단계로 학습하고, ⑤에서 유사문장 2개를 적용한다. Unit 말미에는 새로운 문장과 지문으로 통합 점검한다. Band D의 실전 세트는 별도 무도움 모드로 운영한다. 학습 시간은 파일럿 결과로 정하며, 문장 재독 시간이 줄어든 것만으로 읽기 능력이 향상되었다고 판정하지 않는다.</p>
+</section>
+<section id="samples">
+<h2><span class="num">06</span>Band별 샘플 활동</h2>
+<p>아래 슬래시는 <b>대표 분절 예시</b>이며 유일한 정답이 아니다. 샘플 피드백은 예상 반응에 대한 설계 예시로, 실제 AI 실행 결과가 아니다. Band A~C와 유사문장·맥락 문장은 본 기획을 위해 작성했다. Band D 대표 문장은 사용자가 제공한 원문을 그대로 유지했다.</p>
+
+<article class="sample">
+<span class="tag">BAND A · 예비중~중1</span><h3>명사 뒤에 붙은 짧은 설명을 읽는다</h3>
+<div class="sentence">The girl with a red bag is my sister.</div>
+<p class="summary">9단어 · CORE / CHUNK / EXPAND · 핵심: The girl is my sister. · with a red bag이 the girl을 설명</p>
+<div class="step"><div class="step-title">① 직접 끊기</div><div><p>미션: “누구를 말하는지, 어떤 설명이 붙었는지 생각하며 끊어 보세요.”</p><p class="chunk">The girl / with a red bag / is my sister.</p></div></div>
+<div class="step"><div class="step-title">② AI 피드백</div><div><p>예상 반응: with를 앞 덩어리에 붙이고 a red bag만 따로 읽음.</p><p>“with a red bag은 어떤 소녀인지 알려 주는 표현이에요. 빨간 가방을 가진 사람은 누구인가요?” → the girl 선택 후 다시 끊기.</p></div></div>
+<div class="step"><div class="step-title">③ 구조 시각화</div><div class="structure">[The girl] ── [is my sister]
+    └ 설명: with a red bag</div></div>
+<div class="step"><div class="step-title">④ 직독직해</div><div><p>그 소녀는 → 빨간 가방을 가진 → 내 여동생이다.</p><p>의미 누적: 소녀 → 빨간 가방을 가진 소녀 → 그 소녀는 내 여동생이다.</p></div></div>
+<div class="step"><div class="step-title">⑤ 유사문장 적용</div><div><p class="chunk">The boy with a blue cap is my friend.</p><p>명사 뒤 설명 선택: <b>with a blue cap → The boy</b>.</p><p class="chunk">I know the girl with a red bag.</p><p>설명이 목적어 안으로 이동: <b>with a red bag → the girl</b>.</p><p>맥락 확장: “Two girls are at the gate. The girl with a red bag is my sister.” → 어떤 소녀인지 구별하는 정보를 찾는다.</p></div></div>
+<div class="step"><div class="step-title">⑥ 표시 없이 재독</div><div><p>원문을 표시 없이 재제시한다. “가방을 가진 사람은 누구이며, 나와 어떤 관계인가요?”</p><p><b>확인 기준:</b>소녀가 빨간 가방을 가졌으며 내 여자 형제라는 관계를 이해한다. sister를 언니·누나·여동생 중 어느 것으로 옮겼는지는 문맥 없이 오답 처리하지 않는다.</p></div></div>
+</article>
+
+<article class="sample">
+<span class="tag">BAND B · 중2~중3</span><h3>주어를 설명하는 관계절과 비교를 함께 처리한다</h3>
+<div class="sentence">The book that my teacher recommended was more interesting than I expected.</div>
+<p class="summary">12단어 · EXPAND / CONNECT / INTEGRATE · 관계절 + 비교절 · 핵심: The book was more interesting than I expected.</p>
+<div class="step"><div class="step-title">① 직접 끊기</div><div><p>미션: “책을 설명하는 부분과 그 책에 대한 판단을 나누어 읽어 보세요.”</p><p class="chunk">The book / that my teacher recommended / was more interesting / than I expected.</p></div></div>
+<div class="step"><div class="step-title">② AI 피드백</div><div><p>예상 반응: recommended was를 같은 동사 덩어리로 묶음.</p><p>“recommended는 선생님이 책에 한 행동이고, was는 그 책이 어땠는지 이어 줍니다. that my teacher recommended가 설명하는 말을 찾아보세요.”</p></div></div>
+<div class="step"><div class="step-title">③ 구조 시각화</div><div class="structure">[The book] ── [was more interesting]
+    └ that my teacher recommended → book 설명
+                           └ than I expected → 비교 기준</div></div>
+<div class="step"><div class="step-title">④ 직독직해</div><div><p>그 책은 → 우리 선생님이 추천한 → 더 재미있었다 → 내가 예상했던 것보다.</p><p>누적 의미: 어떤 책인지 먼저 붙잡은 뒤, 재미의 정도를 나의 예상과 비교한다.</p></div></div>
+<div class="step"><div class="step-title">⑤ 유사문장 적용</div><div><p class="chunk">The movie that my friend recommended was more exciting than I expected.</p><p>두 관계 선택: <b>that절 → movie</b>, <b>than절 → 비교 기준</b>.</p><p class="chunk">I found a story that was more surprising than I expected.</p><p>구조 위치 변화: 비교 표현이 <b>story를 설명하는 관계절 안</b>에 들어간다.</p><p>맥락 확장: “I expected a simple story. The book that my teacher recommended was more interesting than I expected. I wanted to read it again.” → 기대와 실제 평가를 구별한다.</p></div></div>
+<div class="step"><div class="step-title">⑥ 표시 없이 재독</div><div><p>“누가 책을 추천했으며, 실제 재미는 예상과 어떻게 달랐나요?”</p><p><b>확인 기준:</b>추천한 사람과 비교 방향을 모두 맞힌다. 관계절을 알아도 비교를 반대로 읽으면 CONNECT 보완 대상으로 기록한다.</p></div></div>
+</article>
+
+<article class="sample">
+<span class="tag">BAND C · 고등</span><h3>중첩된 설명을 지나 주절로 돌아오고 이유를 통합한다</h3>
+<div class="sentence">The report written by researchers who studied online learning suggests that students need regular feedback because it helps them recognize mistakes.</div>
+<p class="summary">21단어 · EXPAND / COMPRESS / CONNECT / INTEGRATE · 분사 수식 안의 관계절 + 내용절 + 이유절</p>
+<div class="step"><div class="step-title">① 직접 끊기</div><div><p>미션: “보고서의 설명을 읽은 뒤 중심 동사로 돌아오고, 보고서가 제시하는 내용을 연결하세요.”</p><p class="chunk">The report / written by researchers / who studied online learning / suggests / that students need regular feedback / because it helps them recognize mistakes.</p></div></div>
+<div class="step"><div class="step-title">② AI 피드백</div><div><p>예상 반응: studied를 문장 전체의 중심 동사로 선택.</p><p>“who studied online learning은 researchers를 설명합니다. 보고서가 무엇을 말하는지 이어 주는 동사는 무엇인가요?” → suggests 선택. 다음으로 it이 가리키는 말 확인.</p></div></div>
+<div class="step"><div class="step-title">③ 구조 시각화</div><div class="structure">The report ── suggests [내용]
+  └ written by researchers
+                  └ who studied online learning
+내용: students need regular feedback
+  └ 이유: because it helps them recognize mistakes
+                  it → regular feedback / them → students</div></div>
+<div class="step"><div class="step-title">④ 직독직해</div><div><p>그 보고서는 → 연구자들이 작성한 → 온라인 학습을 연구한 → 시사한다 → 학생들이 정기적인 피드백을 필요로 한다고 → 그것이 학생들이 실수를 알아차리도록 돕기 때문에.</p><p>통합 확인: 온라인 학습 연구자들이 쓴 보고서는, 피드백이 실수 인식을 돕는다는 이유로 학생들에게 정기적인 피드백이 필요하다고 시사한다.</p></div></div>
+<div class="step"><div class="step-title">⑤ 유사문장 적용</div><div><p class="chunk">The guide written by teachers who work with beginners explains that short tasks build confidence because they give learners frequent chances to succeed.</p><p>명사–수식 연결을 복원하고 <b>they → short tasks</b>를 확인한다.</p><p class="chunk">Students need regular feedback, according to a report written by researchers who studied online learning, because it helps them recognize mistakes.</p><p>출처가 삽입부로 이동해도 <b>students need regular feedback</b>을 유지한다.</p><p>맥락 확장: “Giving students access to lessons is only a first step. [대표 문장] Effective online courses therefore need more than a library of videos.” → 대표 문장이 결론에 제공하는 근거를 설명한다.</p></div></div>
+<div class="step"><div class="step-title">⑥ 표시 없이 재독</div><div><p>“보고서가 제시하는 필요와 그 이유는 무엇인가요? it은 무엇인가요?”</p><p><b>확인 기준:</b>정기적 피드백의 필요, 실수 인식이라는 이유, it의 지시 대상을 함께 설명한다. 중첩 구조 인식과 담화 연결은 별도 기록한다.</p></div></div>
+</article>
+
+<article class="sample">
+<span class="tag">BAND D · 수능</span><h3>복합 구조를 통합해 주장과 이유를 읽는다</h3>
+<div class="sentence" id="csat-sentence">He believed that human societies were moving towards more rational forms regulated by effective and binding legal frameworks because only such frameworks enabled people to live in harmony, to prosper and to co-operate.</div>
+<p class="summary">원문 유지 · 공백 기준 33단어(co-operate를 1단어로 계산) · 내용절 / 분사 후치수식 / 이유절 / enable + 목적어 + to부정사 / 병렬</p>
+<div class="step"><div class="step-title">① 직접 끊기</div><div><p>미션: “그가 믿은 내용, forms의 설명, because 이하의 이유와 세 가지 행동을 연결하며 읽으세요.”</p><p class="chunk">He believed / that human societies were moving / towards more rational forms / regulated by effective and binding legal frameworks / because only such frameworks enabled people / to live in harmony, / to prosper / and to co-operate.</p><p class="muted">enabled people 뒤 경계는 다음 to부정사와의 관계를 유지하는 읽기상 분절이다. enabled people to live in harmony를 하나로 묶는 분절도 허용한다.</p></div></div>
+<div class="step"><div class="step-title">② AI 피드백</div><div><p>진단 예시 1: regulated를 societies의 새로운 중심 동사로 해석함.</p><p>“regulated by…는 more rational forms를 뒤에서 설명합니다. 사회가 어떻게 변화하고 있는지는 were moving이 나타냅니다. forms에 설명을 다시 연결해 보세요.”</p><p>진단 예시 2: 세 to부정사의 병렬 범위를 놓침.</p><p>“그러한 틀이 사람들이 가능하게 한 세 가지 행동을 찾아보세요. to live, to prosper, to co-operate는 enabled people 뒤에서 나란히 연결됩니다.”</p></div></div>
+<div class="step"><div class="step-title">③ 구조 시각화</div><div><div class="structure">He believed [믿음의 내용]
+  └ that human societies were moving
+       └ towards more rational forms
+            └ regulated by effective and binding legal frameworks
+
+because [이유]
+  └ only such frameworks enabled people
+       ├ to live in harmony
+       ├ to prosper
+       └ to co-operate
+
+such frameworks → effective and binding legal frameworks</div><p class="muted">because절이 믿음 자체의 근거를 설명하는지, 그가 믿은 변화의 이유에 포함되는지는 앞뒤 문맥에 따라 읽힘이 달라질 수 있다. 단독 문장에서는 한 가지 부착 위치를 강제 채점하지 않고, 법적 틀의 역할이 이유로 제시된다는 관계를 확인한다.</p></div></div>
+<div class="step"><div class="step-title">④ 직독직해</div><div><ol><li><b>He believed</b> → 그는 믿었다.</li><li><b>that human societies were moving</b> → 인간 사회가 나아가고 있다고.</li><li><b>towards more rational forms</b> → 더 합리적인 형태를 향해.</li><li><b>regulated by effective and binding legal frameworks</b> → 실효성 있고 구속력 있는 법적 틀에 의해 규율되는.</li><li><b>because only such frameworks enabled people</b> → 왜냐하면 오직 그러한 틀만이 사람들에게 가능하게 했기 때문에.</li><li><b>to live in harmony</b> → 조화롭게 살고,</li><li><b>to prosper</b> → 번영하며,</li><li><b>and to co-operate</b> → 협력하는 것을.</li></ol><p>전체 의미: 그는 인간 사회가 실효성 있고 구속력 있는 법적 틀에 의해 규율되는 더 합리적인 형태로 나아가고 있다고 믿었다. 오직 그러한 틀만이 사람들이 조화롭게 살고 번영하며 협력할 수 있게 해 주었기 때문이다.</p></div></div>
+<div class="step"><div class="step-title">⑤ 유사문장 적용</div><div><p class="chunk">She argued that local communities were moving towards more sustainable systems supported by shared resources because only such systems enabled residents to reduce waste, to save energy and to work together.</p><p>전이 1: <b>supported by… → systems</b>, <b>such systems의 지시 대상</b>, <b>세 to부정사의 병렬</b>을 확인한다.</p><p class="chunk">He believed that effective legal frameworks enabled people to build communities regulated by shared rules because such rules helped them resolve conflicts and cooperate.</p><p>전이 2: 분사 수식이 <b>build의 목적어 communities</b> 안으로 이동한다. 원문의 분절 위치를 외워서 적용할 수 없도록 설계한다.</p><p>지문 적용용 작성 맥락: “The thinker saw stable rules as a condition for social progress. [대표 문장] In this view, law was a means of making collective life possible.”</p><p>과제: 대표 문장은 앞의 견해를 어떻게 구체화하는가? → <b>법적 틀이 공동생활을 가능하게 하는 역할을 설명하고 그 이유를 제시한다.</b> 이 맥락은 활동용 창작이며 원문 출처의 맥락이 아니다.</p></div></div>
+<div class="step"><div class="step-title">⑥ 표시 없이 재독</div><div><p>원문을 표시 없이 제시한 뒤 묻는다. “그가 믿은 사회 변화는 무엇이며, 법적 틀이 가능하게 한 세 가지는 무엇인가요?”</p><p><b>확인 기준:</b>더 합리적 형태로의 변화, forms와 regulated의 관계, 조화로운 삶·번영·협력을 통합한다. 이후 새 지문·문제의 무도움 수행으로 실제 전이를 확인한다.</p><p><b>시간 운영:</b>문장 재독은 개인의 첫 정확 읽기와 비교한다. 실전 숙달은 새 지문 세트에서 정확도와 시간 목표를 함께 충족하는지로 판단한다.</p></div></div>
+</article>
+</section>
+<section id="assessment">
+<h2><span class="num">07</span>평가·피드백·개인화</h2>
+<h3>슬래시 일치율 대신 관계 이해를 평가한다</h3>
+<p>끊기는 처리 과정을 드러내는 도구다. 다른 위치에서 끊어도 주절·수식 대상·논리 관계를 유지하면 허용한다. 잘못된 분절이 의심되면 대상 연결이나 의미 질문으로 확인한 뒤 진단한다. 화면 클릭만으로 실제 인지 과정이나 시선의 되돌아읽기를 단정하지 않는다.</p>
+<div class="table-scroll"><table><thead><tr><th>판정 축</th><th>증거</th><th>다음 학습</th></tr></thead><tbody>
+<tr><td>핵심·수식 관계</td><td>주절 동사, 수식 대상, 절 범위를 선택</td><td>같은 기능을 더 짧고 친숙한 문장으로 보완</td></tr>
+<tr><td>의미 통합</td><td>누가 무엇을 했는지, 이유·대조·비교 방향 설명</td><td>어휘 지원 또는 관계 중심 직독직해 배정</td></tr>
+<tr><td>독립 전이</td><td>처음 보는 문장의 무힌트 첫 시도</td><td>어휘·위치·조합 중 한 축을 바꿔 재점검</td></tr>
+<tr><td>유지</td><td>다음 학습일 이후 새 문장으로 지연 점검</td><td>같은 처리 기능의 간격 복습</td></tr>
+<tr><td>실전 수행</td><td>새 지문 문제의 정확도·근거·활성 시간</td><td>구조·어휘·논리·시간 중 병목에 맞춰 경로 분기</td></tr>
+</tbody></table></div>
+<h3>숙달 판정의 초안 <span class="tag proposal">파일럿 검증 필요</span></h3>
+<p>한 처리 기능에서 새 문장 5개 중 4개 이상을 도움 없이 정확하게 이해하고, 다음 학습일 이후 새 문장 점검에서도 관계 이해가 유지되면 다음 복잡도로 이동하는 방안을 검토한다. Band 이동은 여러 핵심 기능과 지문 과제를 함께 확인하며, Band D는 합의한 세트 시간 내 정확도를 추가 조건으로 둔다. 이 기준은 검증 전 운영 가설이다.</p>
+<h3>Sentence Processing Profile</h3>
+<p>CORE, 명사 수식, 동사 확장, 절 연결, 압축·병렬, 중첩 통합, 담화 관계별로 <b>관찰 문항 수 / 무도움 성공 / 도움 후 성공 / 최근 확인일</b>을 저장한다. 표본이 적을 때는 정확도 백분율만 크게 표시하지 않고 ‘추가 확인 필요’ 상태를 제공한다.</p>
+<div class="callout"><b>개인화 예시</b><br>중3 학생이 절 연결은 안정적이지만 긴 주어에서 주절 동사를 놓친다면, Band 전체를 낮추는 대신 명사 수식 문장의 어휘와 길이를 낮춘 보완 과제를 배정한다. 구조 이해가 회복되면 원래 지문의 표시 없는 읽기로 복귀한다.</div>
+<h3>AI 피드백의 역할과 품질 기준</h3>
+<ul><li>전문가가 검수한 구조·의미 관계와 허용 분절안을 기준으로 진단하고, AI는 학습자 반응에 맞게 설명을 조정한다.</li><li>피드백은 “관찰한 부분 → 관계 설명 → 한 번의 재시도”로 짧게 구성한다. 근거 없는 칭찬이나 문법 용어 나열을 피한다.</li><li>문맥에 따라 해석이 달라지는 문장은 허용 해석을 저장하고 단일 정답을 강제하지 않는다.</li><li>슬래시만으로 확신할 수 없으면 확인 질문을 제공한다. 즉석 생성 문장은 구조·어휘·정답 검수 후 정규 코스에 편입한다.</li></ul>
+</section>
+<section id="production">
+<h2><span class="num">08</span>콘텐츠 제작과 검증 계획</h2>
+<h3>대표 문장 1개에 필요한 제작 패키지</h3>
+<p>원문·출처·이용 조건, Band와 Stage, 목표 처리 기능, 보조 문법 태그, 난이도 축, 핵심 명제, 구조 연결, 대표·허용 분절, 예상 오독과 확인 질문, 직독직해·최종 의미, 유사문장 2개, 맥락 과제, 무도움 확인 문항 및 정답 근거를 하나의 패키지로 관리한다.</p>
+<div class="table-scroll"><table><thead><tr><th>업무</th><th>주요 산출물</th><th>검수 책임·완료 조건</th></tr></thead><tbody>
+<tr><td>교육과정 설계</td><td>Band × Stage 지도, 선행 기능과 배정 기준</td><td>교육 기획 · 중복·누락·진입 부담 검토</td></tr>
+<tr><td>문장·활동 제작</td><td>대표·전이·지문 패키지</td><td>영어 콘텐츠 전문가 · 자연스러움과 의미·구조 일치 검수</td></tr>
+<tr><td>학습 UX</td><td>6단계 화면, 키보드 조작, 모바일 분절, 도움 제거</td><td>기획·디자인 · 원문 가독성 및 조작 오류 점검</td></tr>
+<tr><td>진단·피드백</td><td>허용 답안, 오류 분류, 재시도 분기</td><td>콘텐츠·개발 · 타당한 분절의 오답 처리와 잘못된 설명 점검</td></tr>
+<tr><td>평가·로그</td><td>무도움 전이, 지연 점검, 실전 수행 리포트</td><td>평가·데이터 · 도움 조건 구분, 이탈 시간을 제외한 시간 정의</td></tr>
+</tbody></table></div>
+<h3>권장 개발 순서</h3>
+<ol><li><b>소규모 프로토타입:</b>본 문서의 4개 대표 문장으로 끊기·피드백·표시 제거 동작을 구현한다.</li><li><b>Band별 파일럿:</b>Stage별 대표 구조를 고르게 포함해 전문가 판단과 학습자 수행을 비교한다.</li><li><b>난도·피드백 보정:</b>어휘 병목, 조작 부담, 과잉 분절 판정, 도움 의존을 분석한다.</li><li><b>코스 확장:</b>단원 수·문장 수·권 구성과 숙달 기준을 확정하고 문장 은행을 확대한다.</li><li><b>수능 실전편 검증:</b>새 지문과 문제에서 정확도·시간·근거 판단의 변화를 함께 확인한다.</li></ol>
+<div class="note"><b>자료 반영 범위</b><br>사용자가 제공한 이전 대화와 이번 요청을 근거로 작성했다. 초기 대화에서 달랐던 시각화·직독직해의 순서는 최신 합의인 “직접 끊기 → AI 피드백 → 구조 시각화 → 직독직해 → 유사문장 적용 → 표시 제거 후 재독”으로 통일했다. 기존 대화의 시장 순위·판매 수치는 이번 기획의 근거로 재인용하지 않았다. 붙여넣기 자료의 마지막 부분은 잘려 있으므로 세부 권 구성·분량은 합의 완료로 간주하지 않았다.</div>
+</section>
+</main>
+<footer>디지털 구문독해 코스 기획안 · v1.0 · 내부 검토용<br>이 파일은 외부 폰트·이미지·라이브러리 없이 열리는 단일 HTML 문서입니다. 샘플은 활동 설계안이며 AI 학습 서비스가 연결된 실행형 프로토타입은 아닙니다.</footer>
+</div>
+<div class="tools"><button type="button" onclick="window.print()">인쇄 / PDF 저장</button><button type="button" id="download">HTML 다운로드</button></div>
+<script>
+document.getElementById('download').addEventListener('click',function(){const blob=new Blob(['<!doctype html>\n'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='digital-sentence-processing-plan.html';a.click();setTimeout(function(){URL.revokeObjectURL(url)},1500)});
+</script>
+</body>
+</html>
